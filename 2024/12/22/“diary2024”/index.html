@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>一些2024年的日记 | Patrick's blog</title><noscript>开启JavaScript才能访问本站哦~</noscript><link rel="icon" href="/img/pwa/favicon.ico"><!-- index.css--><link rel="stylesheet" href="/css/index.css?v=2.1.14"><!-- inject head--><link rel="canonical" href="http://example.com/2024/12/22/%E2%80%9Cdiary2024%E2%80%9D/"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><!-- aplayer--><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><!-- swiper--><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css"><!-- fancybox ui--><!-- katex--><!-- Open Graph--><meta name="description" content="2024年即将结束了，摘一些我认为可以分享出来的日记吧。 2024.04.28一个人要是没有共情能力，那么他就不配当一个作家。 2024.05.01文学…太神圣了。 2024.05.04 今晚我缺了什么？今天的你缺了改变自己的勇气。 每一天的我都似乎是崭新的，然而却没有任何新"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="Patrick's blog"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="/img/pwa/favicon.ico"><link rel="apple-touch-icon" href="/img/pwa/favicon.ico" sizes="180x180"><script>console.log(' %c Solitude %c ' + '2.1.14' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><script>(()=>{
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                const item = JSON.parse(itemStr)
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        window.utils = {
+            saveToLocal: saveToLocal,
+            getCSS: (url, id = false) => new Promise((resolve, reject) => {
+              const link = document.createElement('link')
+              link.rel = 'stylesheet'
+              link.href = url
+              if (id) link.id = id
+              link.onerror = reject
+              link.onload = link.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                link.onload = link.onreadystatechange = null
+                resolve()
+              }
+              document.head.appendChild(link)
+            }),
+            getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+              const script = document.createElement('script')
+              script.src = url
+              script.async = true
+              script.onerror = reject
+              script.onload = script.onreadystatechange = function() {
+                const loadState = this.readyState
+                if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                script.onload = script.onreadystatechange = null
+                resolve()
+              }
+
+              Object.keys(attr).forEach(key => {
+                script.setAttribute(key, attr[key])
+              })
+
+              document.head.appendChild(script)
+            }),
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              utils.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+          },
+        }
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = utils.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    typeof rm === 'object' && rm.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><!-- global head--><script>const GLOBAL_CONFIG = {
+    root: '/',
+    algolia: undefined,
+    localsearch: {"preload":false,"path":"/search.xml"},
+    runtime: '2023-04-02 00:00:00',
+    lazyload: {
+        enable: false,
+        error: '/img/error_load.avif'
+    },
+    copyright: false,
+    highlight: {"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},
+    randomlink: false,
+    lang: {"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已打开，请遵循GPL协议。","totalk":"无需删除空行，直接输入评论即可","search":{"empty":"找不到你查询的内容：${query}","hit":"找到 ${hits} 条结果，用时 ${time} 毫秒","placeholder":"输入关键词快速查找","count":"共 <b>${count}</b> 条结果。","loading":"搜索中..."}},
+    aside: {
+        sayhello: {
+            morning: "✨ 早上好，新的一天开始了",
+            noon: "🍲 午餐时间",
+            afternoon: "🌞 下午好",
+            night: "早点休息",
+            goodnight: "晚安 😴",
+        },
+        sayhello2: ["你可以的","你一定可以的","祝你好运，陌生人"],
+        sayhello3: {
+            prefix: '好久不见，',
+            back: '欢迎再次回来，',
+        },
+    },
+    covercolor: {
+        enable: false
+    },
+    comment: false,
+    lightbox: 'null',
+    post_ai: false,
+    right_menu: false,
+    translate: {"translateDelay":0,"defaultEncoding":2},
+    lure: false,
+    expire: false,
+};</script><!-- page-config head--><script id="config-diff">var PAGE_CONFIG = {
+    is_post: true,
+    is_page: false,
+    is_home: false,
+    page: '',
+    toc: false,
+    comment: false,
+    ai_text: false,
+    color: false,
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body id="body"><!-- universe--><!-- background img--><!-- loading--><!-- console--><!-- sidebar--><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" onclick="sco.switchDarkMode()"><i class="solitude fa-solid fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><span>全部文章</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><span>全部分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><span>全部标签</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><span>音乐馆</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><span>关于我</span></a></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="card-tag-cloud"><a href="/tags/%E9%80%9A%E7%9F%A5/">通知<sup>1</sup></a><a href="/tags/%E6%96%87%E7%AB%A0/">文章<sup>1</sup></a><a href="/tags/%E6%91%98%E5%BD%95/">摘录<sup>2</sup></a><a href="/tags/%E9%9F%B3%E4%B9%90/">音乐<sup>1</sup></a></div></div></div></div><!-- keyboard--><!-- righhtside--><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav"><div id="nav-group"><div id="blog_name"><a id="site-name" href="/" title="返回博客主页"><span class="title">Petrichor's Blog</span><i class="solitude fa-solid fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="sco.toTop()">一些2024年的日记</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><span>全部文章</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><span>全部分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><span>全部标签</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><span>音乐馆</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><span>关于我</span></a></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机一篇文章" href="javascript:void(0);"><i class="solitude fa-solid fa-dice-d6"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索"><i class="solitude fa-solid fa-magnifying-glass"></i></a></div><div class="nav-button" id="nav-totop" onclick="sco.toTop()"><a class="totopbtn"><i class="solitude fa-solid fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fa-solid fa-bars"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="nolazyload" id="post-cover" src="https://img.picui.cn/free/2024/12/22/67678ddd1010c.png" alt="一些2024年的日记"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="该文章为原创文章，注意版权协议">原创</a><span class="post-meta-categories"><a class="post-meta-categories" href="/categories/%E5%8E%9F%E5%88%9B/">原创</a></span><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%91%98%E5%BD%95/"><span class="tags-name tags-punctuation"><i class="solitude fa-solid fa-hashtag"></i>摘录</span></a></div></div></div></div><h1 class="post-title">一些2024年的日记</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date" title="发布于 2024-12-22 10:21:47"><i class="post-meta-icon solitude fas fa-calendar-days"></i><time datetime="2024-12-22T02:21:47.000Z">2024-12-22T02:21:47.000Z</time></span><span class="post-meta-date" title="最后更新于 2024-12-22 11:56:46"><i class="post-meta-icon solitude fa-solid fa-arrows-rotate"></i><time datetime="2024-12-22T03:56:46.976Z">2024-12-22T03:56:46.976Z</time></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content article-container"><p><em>2024年即将结束了，摘一些我认为可以分享出来的日记吧。</em></p>
+<blockquote>
+<p>2024.04.28<br>一个人要是没有共情能力，那么他就不配当一个作家。
+　　</p>
+</blockquote>
+<blockquote>
+<p>2024.05.01<br>文学…太神圣了。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.04<br>　　今晚我缺了什么？今天的你缺了改变自己的勇气。<br>　　每一天的我都似乎是崭新的，然而却没有任何新意可以展现。每晚睡觉前你都在想：是时候改变现状…以后不能这样了！然而到了第二天，你便打回原形了。这不就是思想上的巨人，行动上的侏儒么？每次失败后你都大谈阔论，好像显得自己以后会是什么成功人士似的，然而现在呢？你明明知道自己在堕落，然而你却什么都不干，对外又宣称自己在很努力？这不是很羞耻的一种行为吗？你一直在反思自己，然而却不懂得改变自己，你在反对自己的失败的时候又去接受它，清醒地看着自己堕落。你不感到羞耻，反倒把它当做一种普遍存在的现象？？<br>　　等到最后你真正失败的时候，你会不会清醒地意识到：你本不该如此，你明明就可以很优秀的啊……！</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.05  21:51<br>　　时间慢得就像在墙上爬了五天还没爬够十厘米的蜗牛。虽然它确实很慢，但我希望它更慢一些，因为即将到来的时光是让我感到惶恐的，所以我宁愿在无聊的时光中做一些自己不喜欢的事情，也不愿意在工作日做一些自己感兴趣的事。<br>　　这就是我为什么每日早起晚睡的原因，我早上一般五点半醒，之前是六点半，我觉得自己每天都比别人多出一小时。这一小时我可以做周末两天会做的事：写作、阅读、听歌。所以说运用、分配好时间真的很重要。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.08<br>　　“希望”总是比“期盼”多了那么一份贪婪。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.12  无题的迷茫<br>　　现在是凌晨两点的二十五分，我睡不着。谁不想好好运用这时间呢？但我现在完全没有精力，也没有动力去做事。前两天喜欢看的书这两天都没怎么看，因为这两天感冒了，虽说不严重，但要我认真干一件事还是比较困难的。<br>　　我对我的身体不是很重视。感冒的两天，我坚持运动，也坚持熬夜。我倒是希望能活得健康一点，但这基本上已经定型了，生活方式就是做到这样嘛，在循环中活出精彩。这不是说说就能的事，太困难了……我开始思考，明天我看到这段文字又作何感想？一年后我中考最终走向何处？高考三年以后又会怎样？我与一批又一批的人告别，又认识了一批又一批的朋友。曾经亲密无间的人现在已经毫无联系了，有些甚至出了矛盾。我现在已经交了一些好朋友了，我对他们比对之前任意一批都更感珍惜，大概是我开始懂得友谊的重要性了。我不想告别，根本不想，告别磨去了我对社交活动热情的棱角。<br>　　我会在这循环往复的告别中失去多少朋友呢？我和她，和他，还有它，都会如何待我？最终会走向何处？还有，我是否会坚持写作？我已经写作两年了，还会有下一个两年么？未来使我感到彷徨，又让我感到盼望。你说盼望，但我还是不想它到来。我不想未来决定了我，不想眼睁睁看着未来走向我自己，我更想看到的是自己一步步走向未来……我感觉现在存在主义与理想主义在我身体里在发生了强烈的碰撞，说到底，我只是自私，想“既要又要”罢了。<br>　　未来的我必须要替我回答现在的我，也只有他，能够意识到现在的我有什么那些完全意识不到的问题。<br>　　睡觉了，尽管没有任何困意，但我仍然期盼太阳升起。未来，你就来吧，我不会逃避的。让我好好看看，我将活出个什么样。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.13<br>　　老鼠似的在背后说闲话，第二天却像没事人那样照样对你示好，完了再继续抹黑你。他干什么都是有目的性的，并且自私自利，真以为别人看不出他那点低劣的心思和丑恶的嘴脸，活脱脱就是老鼠的翻版。这种人连老鼠屎都当不上。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.14<br>　　逐渐觉得她失去了往日在我心目中的光彩，她开始黯淡下来了。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.18<br>　　写作…写作……我还能创造出什么作品？想些有用的事情，干点实事吧。趁现在还有时间，我不想虚度年华了。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.19<br>　　去年的雨绵延至今。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.05.21<br>　　我在之前十分讨厌听别人倾诉。为何？我本就不是一个善于听别人倾诉的人，再者，我觉得倾诉是一种自私的行为。但我不知道总有人喜欢和我倾诉，家人暂且不说，就连普通朋友或同学都一样。每次他们的嘴巴就像陀螺一样转个不停，也不肯歇歇，总之我很不情愿听就是了。<br>　　然而你必须要摆出一副很关心他人的模样，不然倾诉人必定会把你当做一个无情的人；而且你的关心必须要懂得应变，如果太过，他们说你做作，如果太平淡，他们便说你敷衍。所以这就是为什么我认为倾诉是一种自私的行为。他不仅让你觉得别人自私，也会让你觉得自己在装模作样，没有流露出自己真实的情感。<br>　　但我当初这种厌恶的想法，似乎被一次又一次他人的倾诉下磨平了棱角。一开始是慢慢接受，到了后面甚至是喜欢、乐衷于听别人倾诉。有时候我好像能在他人的倾诉中看到自己的影子，他们有多少烦恼是我经历过的？又有多少烦恼是我未曾有过的？这些问题是我在听别人倾诉时往往要思考的问题。前者倾向于自省，他人处理相同问题时的方式，是否比自己更加游刃有余？后者则是一种为自己的将来铺路的思考，若是自己没有经历过这种烦恼，那就听别人是怎么经历的，别人没处理好的，你就和他反着来。哪有人会傻傻地走别人试过了且行不通的路？这种人成功了是天才，失败了是白痴。<br>　　多听听别人倾诉…这不仅是提高你人格魅力的好机会，更是你认识自己的一个途径。仔细想想，它其实并不是一个自私的行为，而是一个海纳百川的无私且伟大的行为！听别人倾诉的同时也不要忘记自己也要倾诉，不要惧怕说不出口，在你说出口的那一瞬间，你才会发现这一切都没什么。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.06.10  守素之帛<br>　　有帛素洁，自语曰：”吾生而无瑕，必永守其纯。宁焚为烬，亦拒墨之染，弗纳垢之侵。”<br>　　砚闻其言，心黯而畏，未敢近之。<br>　　遂此帛犹若霜雪之洁，然独守其纯，虽避尘秽之乱，却失与物交感之缘，未历世之缤纷与沧桑，未悟存之多元与奥玄。其于自筑之清垒中，绝可能之瑕玷，亦失为宏幅、载世象之机。<br>　　观乎天地之间，其洁诚然无疵，然其存之旨，止于洁耳，未及深广。未明真纯非避世不染，乃于混沌绽辉，于污糟守心，于万象迁变悟恒常之理。是以其虽白，然仅为孤白之帛，未得生之丰腴与寥廓。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.06.29 江城子·幽怀寄<br>　　春渐暮，落絮随风飘去。独上高楼凝远雾，心乱渡。<br>　　梦里娇容频顾，醒后残香难驻。欲把情丝弦上赋，却忧弦断处。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.10.20  文字历程<br>　　2022 年年底，一个从未尝试过正式写作的初中生，在厚厚的笔记本上，不带深思熟虑地写下了他文字历程上第一本书中的第一个字。笔墨的香味使他感到兴奋，他满怀憧憬地欲在文学的浩瀚天地里尽情挥洒，急切与兴奋之中是几分盲目与冲动。一个初中生，未经世事磨砺，人生感悟近乎匮乏，凭一时的妄想就执着地开始了艰辛至极的文字历程。他还是太天真了。<br>　　这个初中生就是我。<br>　　为何而写作？无非是看到了一些作家们如此优秀的文字，便想着“自己也可以”，我也想拥有与他们一样如此优秀的表达自我的语言组织能力。于是就不假思索，不带丝毫犹豫地翻箱倒柜，找出日记本，开始如流水般写下一大堆废话。我的文笔与某一位作家极其相似，因为我当时十分热爱于他的小说与散文，就受了他的影响。我会不经意间地模仿他的叙述方式、思想感情，尽管我并不希望如此，但我依旧照做了。这就导致了我最初的文笔有一种不知其所以然的忧愁，我本人却不受影响。我依旧没有放弃，别人说我写的东西太悲观、早熟之类，一开始我无所谓，因为我写的文字并不代表我本人。我甚至在日记中撒谎，怎会为别人的评价而改变自己的思想？而到了后来我真的被影响了。时常感到一种莫名的惆怅。明明未经世事，却强说愁绪，仿佛自己已历经沧桑。方方正正的文字越看越扭曲，的确不像一个初中生的文字，我深思熟虑后，意识到该改一改了。<br>　　优秀的作家们似乎都写小说？<br>　　于是我不再写没有意义的散文，转而去写使我感到高傲的小说，当然，小说也是以模仿他人为开端的，依然是“冒名顶替”。我把文字看作是事物的精髓，看到我“细小而潦草的字像萤火虫似的在黯淡无光的物体上闪烁爬行”时，我兴奋得无以复加：想象的事物成了现实，是实实在在的文字。那一个个文字是有生命的精灵，不论删去哪一个字——甚至是标点符号——我都深感痛心。我从未奢求自己的作品能够一朝出版，然而内心却极力说服自己，那些已然出版的经典之作绝对就是我正在奋力书写的成果。我绝非仅仅依傍于名家而作，我开拓出独属于自己的文学疆域。我是一个抄袭者吗？绝不，我坚信自己是一位“独具匠心的、独具一格”创作者。我进行了深入的加工修改，不只是简单地改动人物的姓名或场景设定，而是深入挖掘每一个细节背后的意义。这些细微的改变并非仅仅是表面的调整，而是让我有权在记忆与想象的边界自由穿梭。现存的句子在我的脑海中经过反复锤炼，以崭新且深刻的面貌重新组合，坚实稳固、条理清晰，这才是真正的灵感体现。当我郑重地将这些句子誊写下来，在我眼前展现出的是一个充满思想深度与复杂情感的世界，那是一个由文字构建的精神王国，密密匝匝地承载着我的思考、梦想与对人生的追问。之后，一本“史诗之作”完成了。从未思考过哪里不足，哪里有待润色，不曾思考。为何如此？没有意义，我并没有忠实的读者，因此我从未尊重那些阅读我文字的人们，我时而将他们视为伯乐，时而又把他们视为累赘。总之，我在那时就是世界第一的作家，绝对是！我狂妄至极，开始寻找崭露头角的机会。<br>　　于是，我开始投稿。我在“投稿——退稿”之间反复横跳，被退稿了会将他们视为不会欣赏，稿过了就将他们视为伯乐，就是如此。我绝不能寻找到当初那个内耗的自己，如果不积极向上，只有被悲观吞噬的机会，悲观没有任何意义。到了后面一次正常的投稿，竟被说成“抄袭了”！虽说我曾如此，可那篇文章绝对是百分百原创。没人肯听我辩解，难以有人欣赏我的文章啊！之后我感到绝望，元气大伤，带着悲愤和不甘停笔两个月。尽管没人在乎我是否停笔。<br>　　两个月，内心经历了巨大的改变。难以再次高傲起来，我开始关注与社会上实实在在的问题，写下了很多我至今认为优秀以及有意义的东西。但我却再也找不到当初那股写作的劲头了，像是饱经沧桑难以泛起涟漪的老人。我停止了一切投稿。<br>　　因害怕自己并非优秀作家而不敢全力创作，又因为有几分相信自己有写作天赋，而不能与平庸写手混为一谈，遂逐渐远离写作圈子，避开交流，结果在内心不断地用不满和懊恼滋养着自己脆弱的自尊心。<br>　　可事实是，担心暴露写作能力不足的怯懦畏惧，和“讨厌刻苦钻研的懒惰”，就是我的全部了。</p>
+</blockquote>
+<blockquote>
+<p>　　2024.12.05<br>　　我感到恶心，直至灵魂深处的厌恶。我身处于恶心之中，恶心在我。不可以过分看重某些终究还是会挣脱我远去，将自己的形象树立起来，作为现实的事物，终究会远离。我将别人束缚着的同时，也把自己束缚住了。束缚就是寻死，只有自我才是真实的，只有自我意识才可以解放自己。任何一个他人都只是意识中朦胧的景象，要是把他人太当真的话，那就会陷入恶心的病态之中。愚蠢的人才会天真的放下过往的去讨好施舍那些曾羞辱过自己的人，妄想以此套近乎、得到回报的，妄想纵情于共存的，只会让自己的个性在其中彻底泯灭。未经他人苦难就去同情劝告他人的，就是出卖你自己，就是折磨自己。一定要远离他人，他人即地狱，是一座关着各种丑八怪的病人院，没有任何一句灵魂可以如实的展现自身，他们在潜意识中美化的各种可耻行径，所有羞愧都是出自他们的虚假。所有人的灵魂就像一个肉市场，充斥着腥臭味，栖居着面目可憎的面目可憎、黏乎如鼻涕虫般的生物。<br>　　在宇宙万物的宏观视野之下，在一切无限复杂性中，一起阅读，思考，交往都是无用的，人都是要死的。我没有必要去让所有事物都自圆其说。讲真的，千万不可对社交属性之物流露出丝毫的情感，要将自己保护得严严实实，最大限度地避免与他人接触。这是自我主义吗？这是解放自己的自我人道主义，远离他人，就是拯救自己。</p>
+</blockquote>
+<blockquote>
+<p><em>没有日期，应该是小说的内容</em></p>
+<p>我一切行为都是靠着过往的生活经验操控着，我一切坚持都是凭着我那毫无生气的意志力生存着。那些过往之事使我在这个世界上有了立足之地，于是我便在我涉足最多的形成了舒适圈，诚然，我没有跳出舒适圈的勇气，也没有跳出去的理由；就算我有那理由和勇气，我也只会跳到另一个舒适圈苟延残喘。我这是在自己的精神世界中虚度光阴罢了，但仍然等待着某个契机，我会突然意识到要对自己进行一场革命，再不想过行尸走肉般的生活了。我只会等待着那一天的到来，而不是自己走向那一天，多么可悲的一个人。</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><a class="post-copyright__author_img" href="/about/"><img class="post-copyright__author_img_front" src="/img/12.png"></a><div class="post-copyright__author_name">Patrick's blog</div><div class="post-copyright__author_desc">Blog</div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" onclick="RemoveRewardMask()"></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>协议，完整转载请注明来自<a href="/">Patrick's blog</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%91%98%E5%BD%95/"><span class="tags-punctuation"><i class="solitude fa-solid fa-hashtag"></i>摘录<span class="tagsPageCount">2</span></span></a></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/12/22/sakamoto/"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">坂本龙一：那些不容错过的音乐佳作</div></div></a></div><div class="next-post pull-right"><a href="/2024/12/21/bully/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">摘录一下自己的小说</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-bg-top"><div class="is-center"><div class="author-info__top-group"><div class="author-info__sayhi" id="author-info__sayhi" onclick="sco.changeSayHelloText()">sayhello.morning</div></div></div></div><a class="card-info-avatar" href="/about/" title="头像"><div class="avatar-img"><img src="/img/12.png" alt="头像"></div></a><div class="card-info__desc_group"><div class="author-info__name">Patrick</div><div class="author-info__desc">Blog</div><div class="card-info__data is-center"><a href="/archives/" title="累计文章数:5"><div class="length-num">5</div><div class="headline">文章</div></a><a href="/tags/" title="标签总数:4"><div class="length-num">4</div><div class="headline">标签</div></a><a href="/categories/" title="分类总数:1"><div class="length-num">1</div><div class="headline">分类</div></a></div><div class="card-info-social-icons is-center"></div></div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fa-solid fa-map"></i><span>最近发布</span></div><div class="aside-list"><a class="aside-list-item" href="/2024/12/22/sakamoto/" title="坂本龙一：那些不容错过的音乐佳作"><div class="thumbnail"><img alt="坂本龙一：那些不容错过的音乐佳作" src="https://img.picui.cn/free/2024/12/22/67676dde3659e.jpg"></div><div class="content"><span class="title" href="/2024/12/22/sakamoto/" title="坂本龙一：那些不容错过的音乐佳作">坂本龙一：那些不容错过的音乐佳作</span><span class="article-recent_post_categories" href="/2024/12/22/sakamoto/">原创</span></div></a><a class="aside-list-item" href="/2024/12/22/%E2%80%9Cdiary2024%E2%80%9D/" title="一些2024年的日记"><div class="thumbnail"><img alt="一些2024年的日记" src="https://img.picui.cn/free/2024/12/22/67678ddd1010c.png"></div><div class="content"><span class="title" href="/2024/12/22/%E2%80%9Cdiary2024%E2%80%9D/" title="一些2024年的日记">一些2024年的日记</span><span class="article-recent_post_categories" href="/2024/12/22/%E2%80%9Cdiary2024%E2%80%9D/">原创</span></div></a><a class="aside-list-item" href="/2024/12/21/bully/" title="摘录一下自己的小说"><div class="thumbnail"><img alt="摘录一下自己的小说" src="https://img.picui.cn/free/2024/12/21/6766e4fabc869.png"></div><div class="content"><span class="title" href="/2024/12/21/bully/" title="摘录一下自己的小说">摘录一下自己的小说</span><span class="article-recent_post_categories" href="/2024/12/21/bully/">原创</span></div></a><a class="aside-list-item" href="/2024/12/20/article1220/" title="何为“存在先于本质”？"><div class="thumbnail"><img alt="何为“存在先于本质”？" src="/img/arti1.png"></div><div class="content"><span class="title" href="/2024/12/20/article1220/" title="何为“存在先于本质”？">何为“存在先于本质”？</span><span class="article-recent_post_categories" href="/2024/12/20/article1220/">原创</span></div></a><a class="aside-list-item" href="/2024/08/03/about/" title="关于本博客的声明"><div class="thumbnail"><img alt="关于本博客的声明" src="/img/1.jpg"></div><div class="content"><span class="title" href="/2024/08/03/about/" title="关于本博客的声明">关于本博客的声明</span></div></a></div></div></div></div></main><footer id="footer"><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2023 - 2024 By&nbsp;<a class="footer-bar-link" href="/"><img class="author-avatar" src="/img/pwa/favicon.ico">Patrick</a></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude" alt="基于Solitude主题开发">基于Solitude主题开发</a></div></div></div></footer></div><!-- right_menu--><!-- inject body--><div><script src="/js/utils.js?v=2.1.14"></script><script src="/js/main.js?v=2.1.14"></script><script src="/js/third_party/waterfall.min.js?v=2.1.14"></script><script src="https://fastly.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/tw_cn.js?v=2.1.14"></script><script src="https://fastly.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script src="https://fastly.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script><script>var meting_api = 'https://meting.qjqq.cn/?server=:server&type=:type&id=:id&auth=:auth&r=:r';</script><script src="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+utils.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+</script><script src="https://fastly.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div class="js-pjax"></div></div><!-- pjax--><script>const pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+})
+
+document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+})
+
+document.addEventListener('pjax:complete', () => {
+    window.refreshFn()
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+    if (e.request.status === 404) {
+        pjax.loadUrl('/404.html')
+    }
+})</script><!-- google adsense--><!-- search--><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="solitude fa-solid fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找"></div><div id="search-results"><div id="search-hits"></div></div><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div><script src="/js/search/local.js?v=2.1.14"></script><!-- Tianli-Talk--><!-- music--><div class="needEndHide" id="nav-music"><div id="nav-music-hoverTips" onclick="sco.musicToggle()">音乐已暂停</div><meting-js id="13027739700" server="netease" type="playlist" mutex="true" preload="none" theme="var(--efu-main)" data-lrctype="0" order="random" volume="0.8"></meting-js></div></body></html>
+        <script>
+            const posts = ["2024/12/22/sakamoto/","2024/12/22/“diary2024”/","2024/12/21/bully/","2024/12/20/article1220/","2024/08/03/about/"];
+            function toRandomPost() {
+                const randomPost = posts[Math.floor(Math.random() * posts.length)];
+                pjax.loadUrl(GLOBAL_CONFIG.root + randomPost);
+            }
+        </script>
