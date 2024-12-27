@@ -1,0 +1,87 @@
+﻿authorinfo:
+  leftTags:
+    - 🤖️ 阅读和写作爱好者 
+    - 🔍 新古典音乐爱好者
+    - 🏠 既宅家又外出
+  rightTags:
+    - 时而运动，时而懒惰 🏃
+    - 研究存在主义ing 🧱
+    - 15岁的初中生 💢
+  image: https://img.picui.cn/free/2024/12/22/6767938672b9f.jpg
+
+title: 关于本站
+contentinfo: # Top personal information display
+  sup: 你好，很高兴认识你👋
+  name: 我是Patrick # Name
+  title: 学生, 独立写作者 # Introduction
+  tip: 爱写作，更爱阅读。
+  slogan: 镜破不改光，兰死不改香
+  mask:
+    - 存在主义
+    - 陀思妥耶夫斯基
+    - 让·保罗·萨特
+    - 坂本龙一
+ 
+
+oneself: # Fill in as needed
+  location: 中国, 广东 # Location
+  birthYear: 2009 # Birthday
+  university: 还没上大学，但想当 # Graduated from
+  major: 律师、警察 # Major
+  occupation: 学生 # Occupation
+  map: # Map of your location
+    light: https://img.picui.cn/free/2024/12/22/67679e2a438be.png # Daytime
+    dark: https://img.picui.cn/free/2024/12/22/67679e2a438be.png # Nighttime
+
+
+personalities:
+  tips: 性格
+  title: 逻辑学家
+  color: "#2c2131"
+  type: INTP-T
+  link: https://www.16personalities.com/
+  linkText: 16personalities
+  typeLink: https://www.16personalities.com/ch/intp-%E4%BA%BA%E6%A0%BC-人格
+  typeName: 逻辑学家
+  myphoto: https://img.picui.cn/free/2024/12/22/676794d2803ea.png
+motto:
+  title: 座右铭
+  prefix: 有志者，
+  content: 事竟成。
+
+expertise:
+  title: 专长
+  prefix: 写作, 阅读，摄影
+  specialist: “专家”
+  content: 学习能力
+  level: VERY LOW
+
+likes:
+  - type: like-music
+    bg: https://img.picui.cn/free/2024/12/22/6767a22a9a5ad.jpg
+    tips: 音乐偏好
+    title: 新古典音乐
+    subtips: 跟 Patrick 一起欣赏更多音乐
+    button: true
+    button_text: 更多推荐
+    button_link: /music/
+
+careers:
+  title: 经历
+  subtitle: 豪华尽出成功后，逸乐安知与祸双？
+  items:
+    - school: 广东某个公立中学
+      major: 学习，尚未有任何值得一说的经历。
+      color: "#357ef5"
+
+
+cause:
+  tip: 初衷
+  title: 为什么建立这个网站？
+  content:
+    <br>创建这个网站的初衷是有一个地方可以 <b>记录自己的生活</b>。与他人分享一些文字。如果一些文字可以感触到他人的话，那就更好了。
+    <br>
+    这是一个偏向文学的博客 <b>但或许也会有一些电脑知识教学</b>、<b>生活轶事和建议</b>、<b>各种思考和想法</b>。无论我研究或发现什么，我都会在这里分享。
+    <br>
+    这是创建这个小网站的初衷，也是 <b>我分享生活的方式</b>。我很幸运在这里遇见你。
+    <br>
